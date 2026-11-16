@@ -1,0 +1,10 @@
+/* A small, dependency-free dark appearance for arbitrary web pages. */
+html[data-adark="on"] {
+  filter: invert(1) hue-rotate(180deg) !important;
+  background: #fff !important;
+}
+
+/* Keep photographic and video content in its original colors. */
+html[data-adark="on"] :is(img, video, canvas, iframe, [role="img"]) {
+  filter: invert(1) hue-rotate(180deg) !important;
+}
